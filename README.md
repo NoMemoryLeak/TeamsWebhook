@@ -25,7 +25,6 @@ Download file src and open a first Terminal
 ```
 cd <path>/src
 python3 app.py
-
 ```
 
 Open a second Terminal :
@@ -38,13 +37,13 @@ Open Teams and check your WebHook with your JSOn title
 
 ## Running with Docker
 
- 1- Create a docker image and run it 
+ ##### 1- Create a docker image and run it 
 ```
     sudo docker build -t <user name>/teamsapp .
     sudo docker images
     sudo docker run -p 8080:8080 --env TEAMS="<your webhook url"> <docker user name>/teamsapp
 ```
- 2- Launch your JSON to Teams
+ ###### 2- Launch your JSON to Teams
 
 ```
     curl -XPOST -d '{"title":"<your title>"} -H "Content-type:application/json" http://localhost:8080
