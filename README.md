@@ -43,7 +43,7 @@ Open Teams and check your WebHook with your JSOn title
     sudo docker images
     sudo docker run -p 8080:8080 --env TEAMS="<your webhook url"> <docker user name>/teamsapp
 ```
- ###### 2- Launch your JSON to Teams
+ ##### 2- Launch your JSON to Teams
 
 ```
     curl -XPOST -d '{"title":"<your title>"} -H "Content-type:application/json" http://localhost:8080
